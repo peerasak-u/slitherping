@@ -1,0 +1,219 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.2.0
+build: 2676
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+
+/*********************************************************************
+* Copyright (C) 2011 Rest Backup LLC
+*********************************************************************/
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+a {
+  color: #3b5998; /*#12a;*/
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00f;
+  text-decoration: underline;
+}
+
+h2:hover {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+  padding: 0.5em 0 0 0; /* top right bottom left */
+  margin: 0.5em 0 0 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+    color: #203360;
+    font-size:200%;
+}
+
+h2 {
+    color: #3b5998;
+    font-size:150%;
+    border-bottom: 1px solid #3b5998;
+}
+
+h3 {
+    color: #6c87bc;
+    font-size:130%;
+}
+
+h4 {
+    color: #8699c1;
+}
+
+p,ul,ol,pre {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+SPAN.bold {
+    font-weight: bolder;
+}
+
+EM {
+    font-weight: bolder;
+    font-style: inherit;
+}
+
+STRONG {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+table {
+    font-family: verdana, arial, helvetica, clean, sans-serif;
+    font-size: 90%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #d3d3d3;
+}
+
+th {
+    background: #eef;
+}
+
+th,td {
+    padding: 0.5em;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+table.layout {
+    border: none;
+    font-size: inherit;
+}
+
+table.layout th,tr,td {
+    border: none;
+    vertical-align: top;
+}
+
+td.layout {
+    width: 50%;
+}
+
+pre {
+    overflow: auto;
+    width: 100%;
+}
+
+/*********************************************************************
+* Page
+*********************************************************************/
+
+#page {
+  /* top right bottom left */
+  width: 750px;
+  margin: 0 auto;
+  padding: 25px 2px 30px 2px;
+  text-align: left;
+  /*border: 1px brown dashed;/**/
+}
+
+
+/*********************************************************************
+* Content
+*********************************************************************/
+
+#content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*********************************************************************
+* Title
+*********************************************************************/
+
+#title, #title * {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-top: none;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: none;
+    border-right: none;
+}
+
+#title h1 {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+/*********************************************************************
+* Footer
+*********************************************************************/
+
+#footer {
+  width: 100%;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #d3d3d3;
+  text-align: center;
+  color: #999;
+}
+
+#footer P {
+  white-space: nowrap;
+}
+
+#footer div {
+    display: inline;
+    margin: none;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-right: 1px #999 solid;
+}
+
+#footer div.last {
+    border-right: none;
+}    
+
+/*********************************************************************
+* Pinger
+*********************************************************************/
+
+#pinger {
+    margin-bottom: 1em;
+}
+
+#pingbutton {
+    width: auto;
+    height:3em;
+    font-size: larger;
+}
+
+/*********************************************************************
+* Legalese
+*********************************************************************/
+
+#legalese {
+  width: 100%;
+  margin-top: 1em;
+  padding-top: 1em;
+  text-align: center;
+  color: #999;
+}
