@@ -3281,6 +3281,47 @@ mixpanel.track("visit page");
 
 var pingButton = $("#pingbutton");
 
+jQuery.fn.getSelection = function() {
+    //keine Elemente übergeben, Abbruch
+    if (!this.length) {
+        return false;
+    }
+    var get = "",
+        text;
+    //Standardbrowser
+    if (window.getSelection) {
+        get = window.getSelection();
+    } else {
+        //älterer Browser?
+        if (document.getSelection) {
+            get = document.getSelection();
+        } else {
+            //IE...
+            if (document.selection) {
+                get = document.selection.createRange().text;
+            } else {
+                return false;
+            }
+        }
+    }
+    //überflüssige Leerzeichen kicken
+    text = get.toString().replace(/\s/g, " ");
+    if (text.length) {
+        return text;
+    } else {
+        return false;
+    }
+};
+
+$("body").bind({
+    copy: function() {
+      mixpanel.track(
+        "copy ip",
+        {"server ip": $(this).getSelection()}
+      );
+    }
+  });
+
 function disablePingButton() {
     pingButton.attr("disabled", "disabled");
 };
